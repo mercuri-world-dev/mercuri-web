@@ -12,7 +12,7 @@ describe.skip('Footer.svelte', () => {
 
 	test('should render a logo', () => {
 		render(Footer);
-		const logo = screen.getByRole('img', { name: /mercuri logo/i });
+		const logo = screen.getByRole('img', { name: /mercuri logo \(star only\)/i });
 		expect(logo).toBeInTheDocument();
 	});
 
