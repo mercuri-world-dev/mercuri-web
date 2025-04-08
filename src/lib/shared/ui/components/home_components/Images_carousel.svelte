@@ -3,7 +3,7 @@
 
     export let images: string[] = [];
     export let speed = 15;
-    let animation: Animation;
+    let animation: Animation | null=null;
     let trackElement: HTMLElement;
     onMount(() => {
         if (trackElement) {
@@ -12,7 +12,7 @@
                 { transform: 'translateX(0%)' }
             ];
 
-            animation = trackElement.animate(keyframes, {
+            animation = trackElement?.animate?.(keyframes, {
                 duration: speed * 1000,
                 iterations: Infinity
             });
@@ -75,8 +75,8 @@
 
 <div class="carousel-container" 
      role="group" 
-     on:mouseenter={() => animation?.updatePlaybackRate(0.5)}
-     on:mouseleave={() => animation?.updatePlaybackRate(1)}>
+     on:mouseenter={() => animation?.updatePlaybackRate?.(0.5)}
+     on:mouseleave={() => animation?.updatePlaybackRate?.(1)}>
     <div class="carousel-track" bind:this={trackElement}>
         {#each images as image}
             <div class="carousel-item">

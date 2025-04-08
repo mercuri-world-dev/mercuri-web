@@ -84,10 +84,10 @@
 		>
 		<div class="max-w-md text-left">
 			<h2 class="text-4xl font-bold text-indigo-900">mercuri.world</h2>
-			<p class="mt-2 text-xl text-[#1a1a3d]">
+			<div class="mt-2 text-xl text-[#1a1a3d]">
 				makes mental health resources <br />
 				<span class="font-bold text-blue-950 italic text-4xl">accessible to <em>everyone</em>.</span>
-			</p>
+			</div>
 			<p class="mt-4 text-black-900 font-medium">
 				We are a collective of <span class="text-indigo-700"
 					>activists, researchers, engineers, and creatives</span
@@ -139,20 +139,20 @@
 		  Meet mercuri.world's teams.
 		</span>
 	  </h2>
-	  <p class="mt-2 text-center text-blue-950 px-4 max-w-lg mx-auto text-sm md:text-base">
+	  <div class="mt-2 text-center text-blue-950 px-4 max-w-lg mx-auto text-sm md:text-base">
 		<span class="font-bold bg-clip-text text-transparent" 
 			  style="background-image: linear-gradient(0deg, rgb(32, 48, 128) 0%, rgb(0, 0, 0) 100%);">
 			  mercuri.world
 			</span>
 			is made possible by several volunteer teams that work in cohesion to support our mission.
-		</p>
+		</div>
 		<div class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
 			{#each teams as team}
 				<div class="relative flex rounded-4xl bg-indigo-50 textbgcolor p-4">
 					<img src={logo} class=" m-auto h-10 text-6xl text-indigo-900" alt="mercurilogo">
 					<div class="p-1">
-						<p class="text-gray-800 p-0 m-0">{team.description}</p>
-						<p class="mt-2 font-extrabold text-xl text-indigo-900 p-0 m-0">{team.title}</p>
+						<div class="text-gray-800 p-0 m-0">{team.description}</div>
+						<div class="mt-2 font-extrabold text-xl text-indigo-900 p-0 m-0">{team.title}</div>
 					</div>
 				</div>
 			{/each}
