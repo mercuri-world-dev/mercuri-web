@@ -3,7 +3,7 @@
 	export let speed = 10;
 </script>
 
-<div class="scroll-container">
+<div data-testid="text-scroll" class="scroll-container">
 	<div class="scroll-text" style="--speed: {speed}s">
 		{#each Array(10).fill(text) as word}
 			<span>{word}</span>
