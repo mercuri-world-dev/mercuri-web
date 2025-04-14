@@ -73,7 +73,8 @@
     }
 </style>
 
-<div class="carousel-container" 
+<div data-testid="images-carousel"
+     class="carousel-container" 
      role="group" 
      on:mouseenter={() => animation?.updatePlaybackRate?.(0.5)}
      on:mouseleave={() => animation?.updatePlaybackRate?.(1)}>
