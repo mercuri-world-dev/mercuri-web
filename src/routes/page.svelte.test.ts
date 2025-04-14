@@ -19,7 +19,7 @@ describe('/+page.svelte', () => {
 
 	test('should render an image', () => {
 		render(Page);
-		const image = screen.getByRole('img');
+		const image = screen.getAllByRole('img')[0];
 		expect(image).toBeInTheDocument();
 	});
 
@@ -37,7 +37,7 @@ describe('/+page.svelte', () => {
 
 	test('should render h2 with correct text', () => {
 		render(Page);
-		const heading = screen.getByRole('heading', { level: 2 });
+		const heading = screen.getAllByRole('heading', { level: 2 })[0];
 		expect(heading).toHaveTextContent(
 			'mercuri.world makes mental health resources accessible to everyone.'
 		);
@@ -52,7 +52,7 @@ describe('/+page.svelte', () => {
 		render(Page);
 		const heading = screen.getByRole('paragraph');
 		expect(heading).toHaveTextContent(
-			'We are a collective of activists, researchers, engineers, and creatives based in over a dozen nations. we develop, translate, and curate evidence-based digital mental health resources and disseminate them digitally and through our global outreach network.'
+			'We are a collective of activists, researchers, engineers, and creatives based in over a dozen nations. We develop, translate, and curate evidence-based digital mental health resources and disseminate them digitally and through our global outreach network.'
 		);
 	});
 });
