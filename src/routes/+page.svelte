@@ -1,3 +1,4 @@
+<script>
 	import logo from '$lib/assets/logos/mercuri_logo_star_only.png';
 	import img1 from '$lib/assets/images/carousel1.avif';
 	import img2 from '$lib/assets/images/carousel2.avif';
