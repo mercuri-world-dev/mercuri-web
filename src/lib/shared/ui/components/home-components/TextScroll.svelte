@@ -1,12 +1,19 @@
 <script lang="ts">
-	export let text = 'who we are ✷';
+	export let text = 'who we are';
+	export let seperator = '✷';
 	export let speed = 10;
+	export let gap = '2rem';
+	export let fontSize = '69px';
 </script>
 
-<div class="scroll-container">
-	<div class="scroll-text" style="--speed: {speed}s">
+<div data-testid="text-scroll" class="scroll-container">
+	<div
+		class="scroll-text"
+		style="--speed: {speed}s; gap: {gap}; font-size: {fontSize};"
+	>
 		{#each Array(10).fill(text) as word}
 			<span>{word}</span>
+			<span>{seperator}</span>
 		{/each}
 	</div>
 </div>
@@ -32,11 +39,9 @@
 
 	.scroll-text {
 		display: flex;
-		gap: 2rem;
 		animation: scrollText var(--speed) linear infinite;
 		font-weight: bold;
 		color: transparent;
 		-webkit-text-stroke: 2px rgb(46, 5, 160);
-		font-size: 69px;
 	}
 </style>
