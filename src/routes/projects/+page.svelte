@@ -54,7 +54,8 @@
   <TextScroll 
     text="our projects" 
     seperator="✺" 
-    fontSize="80px" 
+    fontSize="80px"
+    seperatorWeight="normal" 
   />
   
   <div 

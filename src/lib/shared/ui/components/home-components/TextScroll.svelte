@@ -4,6 +4,7 @@
 	export let speed = 10;
 	export let gap = '2rem';
 	export let fontSize = '69px';
+	export let seperatorWeight = 'bold';
 </script>
 
 <div data-testid="text-scroll" class="scroll-container">
@@ -13,7 +14,7 @@
 	>
 		{#each Array(10).fill(text) as word}
 			<span>{word}</span>
-			<span>{seperator}</span>
+			<span style="font-weight: {seperatorWeight};">{seperator}</span>
 		{/each}
 	</div>
 </div>
