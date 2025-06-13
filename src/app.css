@@ -1,18 +1,18 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 
-@font-face {
-	font-family: 'font-alte-haas-grotesk';
-	src: url('/fonts/AlteHaasGroteskRegular.ttf') format('tff');
-}
-
-@font-face {
-	font-family: 'font-alte-haas-grotesk-bold';
-	src: url('/fonts/AlteHaasGroteskBold.ttf') format('tff');
-}
-
 @layer base {
-	html {
+	/* html {
 		font-family: 'font-alte-haas-grotesk', system-ui, sans-serif;
+	} */
+
+	@font-face {
+		font-family: 'font-alte-haas-grotesk';
+		src: url('/fonts/AlteHaasGroteskRegular.ttf') format('tff');
+	}
+	
+	@font-face {
+		font-family: 'font-alte-haas-grotesk-bold';
+		src: url('/fonts/AlteHaasGroteskBold.ttf') format('tff');
 	}
 }
