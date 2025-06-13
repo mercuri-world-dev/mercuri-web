@@ -68,6 +68,7 @@
         <div 
           class="rounded-3xl p-6 border shadow-md transition-all duration-300 hover:shadow-[15px_15px_0px_rgba(131,104,227,0.6)]"
           style="background-color: #ffffff; border-color: {colors.mercuriBlue};"
+          data-testid="project-card"
         >
           <div 
             class="flex justify-between items-start"
