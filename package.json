@@ -60,7 +60,8 @@
     "vitest": "^3.0.0"
   },
   "dependencies": {
-    "@inlang/paraglide-sveltekit": "^0.15.5"
+    "@inlang/paraglide-sveltekit": "^0.15.5",
+    "lucide-svelte": "^0.525.0"
   },
   "eslintConfig": {
     "extends": [
