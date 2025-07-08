@@ -6,16 +6,6 @@
 	/* html {
 		font-family: 'font-alte-haas-grotesk', system-ui, sans-serif;
 	} */
-
-	@font-face {
-		font-family: 'font-alte-haas-grotesk';
-		src: url('/fonts/AlteHaasGroteskRegular.ttf') format('tff');
-	}
-	
-	@font-face {
-		font-family: 'font-alte-haas-grotesk-bold';
-		src: url('/fonts/AlteHaasGroteskBold.ttf') format('tff');
-	}
 }
 
 @theme {
@@ -34,5 +24,3 @@
 	--color-silver-grey: oklch(84.56% 0.022 265.83);
 	--color-soft-warm-white: oklch(97.97% 0.007 285.81);
 }
-
-  

@@ -8,8 +8,7 @@ beforeEach(() => {
 	render(Partners);
 });
 
-describe.skip('/+page.svelte', () => {
-
+describe('/+page.svelte', () => {
 	test('should render footer', () => {
 		const footer = screen.getByTestId('footer');
 		expect(footer).toBeInTheDocument();
