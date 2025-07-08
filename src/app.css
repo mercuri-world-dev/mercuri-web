@@ -1,13 +1,26 @@
 @import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
 
 @layer base {
-	@font-face {
-		font-family: 'font-alte-haas-grotesk';
-		src: url('/fonts/AlteHaasGroteskRegular.ttf') format('tff');
-	}
+	/* html {
+		font-family: 'font-alte-haas-grotesk', system-ui, sans-serif;
+	} */
+}
 
-	@font-face {
-		font-family: 'font-alte-haas-grotesk-bold';
-		src: url('/fonts/AlteHaasGroteskBold.ttf') format('tff');
-	}
+@theme {
+	--color-mercuri-blue: oklch(34.41% 0.173 266.43);
+	--color-cobalt-blue: oklch(44.47% 0.178 268.36);
+	--color-cornflower-blue: oklch(68.57% 0.122 270.47);
+	--color-periwinkle-blue: oklch(78.83% 0.093 271.55);
+
+	--color-deep-eggplant: oklch(24.09% 0.061 311.12);
+	--color-darker-lilac: oklch(55.57% 0.131 289.41);
+	--color-greyish-lilac: oklch(65.07% 0.055 292.23);
+	--color-cloudy-lavender: oklch(80.21% 0.059 290.26);
+	--color-lilac: oklch(87.81% 0.052 293.33);
+	--color-pale-purple: oklch(93.72% 0.026 292.65);
+	--color-soft-blush: oklch(95.88% 0.041 328.15);
+	--color-silver-grey: oklch(84.56% 0.022 265.83);
+	--color-soft-warm-white: oklch(97.97% 0.007 285.81);
 }
