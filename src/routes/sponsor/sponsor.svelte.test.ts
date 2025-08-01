@@ -1,4 +1,4 @@
-import { render, fireEvent } from '@testing-library/svelte';
+import { render, fireEvent} from '@testing-library/svelte';
 import Sponsor from './+page.svelte';
 import { describe, expect, it } from 'vitest';
 
@@ -26,8 +26,8 @@ describe('Sponsor Page', () => {
 
   it('description paragraph uses <p>', () => {
     const { container } = render(Sponsor);
-    const paragraph = container.querySelector('p');
-    expect(paragraph).toHaveTextContent(/passionate high school and college students/i);
+    const p = container.querySelector('p');
+    expect(p).toHaveTextContent(/passionate high school and college students/i);
   });
 
   it('corporate sponsorship email uses <a> with mailto', () => {
